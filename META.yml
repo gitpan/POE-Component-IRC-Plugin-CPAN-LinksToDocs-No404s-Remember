@@ -1,0 +1,22 @@
+---
+name: POE-Component-IRC-Plugin-CPAN-LinksToDocs-No404s-Remember
+version: 0.001
+author:
+  - 'Zoffix Znet <zoffix@cpan.org>'
+abstract: 'link to http://search.cpan.org/ documentation from IRC (and check that all links lead to existing docs, remembering which ones work)'
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  POE::Component::CPAN::LinksToDocs::No404s::Remember: 0.001
+  POE::Component::IRC::Plugin::BasePoCoWrap: 0.002
+build_requires:
+  Test::More: 0
+provides:
+  POE::Component::IRC::Plugin::CPAN::LinksToDocs::No404s::Remember:
+    file: lib/POE/Component/IRC/Plugin/CPAN/LinksToDocs/No404s/Remember.pm
+    version: 0.001
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
